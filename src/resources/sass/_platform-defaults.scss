@@ -1,0 +1,23 @@
+// generic defaults
+
+* {
+  font-family: mwebleyText;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding:0;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background: $brand-background-lightgrey;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.app-container {
+  padding: 25px;
+}

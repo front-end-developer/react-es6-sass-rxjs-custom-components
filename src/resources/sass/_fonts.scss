@@ -1,0 +1,364 @@
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-BlackItalic.ttf');
+  font-weight: 900;
+  font-style: italic;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-Light.ttf');
+  font-weight: 300;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-LightItalic.ttf');
+  font-weight: 300;
+  font-style: italic;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-style: italic;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-Thin.ttf');
+  font-weight: 100;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-ThinItalic.ttf');
+  font-weight: 100;
+  font-style: italic;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  color: $color-functional-neutral80;
+}
+
+
+@font-face {
+  font-family: mwebleyText;
+  src: url('/fonts/roboto/Roboto-MediumItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
+  color: $color-functional-neutral80;
+}
+
+
+
+// Infinitas Symantec Styles
+
+// InfinitasHeadline
+@font-face {
+  font-family: mwebleyHero;
+  src: url('/fonts/roboto/Roboto-Bold.ttf');
+  font-size: 64px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 125%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadline;
+  src: url('/fonts/roboto/Roboto-Bold.ttf');
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 117%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineTwo;
+  src: url('/fonts/roboto/Roboto-Bold.ttf');
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 124%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineThree;
+  src: url('/fonts/roboto/Roboto-Bold.ttf');
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 132%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineFour;
+  src: url('/fonts/roboto/Roboto-Bold.ttf');
+  font-size: 16px;
+  font-weight: 'bold';
+  font-style: normal;
+  line-height: 150%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineFive;
+  src: url('/fonts/roboto/Roboto-Bold.ttf');
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 170%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineSix;
+  src: url('/fonts/roboto/Roboto-Bold.ttf');
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 130%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyBodyText;
+  src: url('/fonts/roboto/Roboto-Bold.ttf');
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyNoteBold;
+  src: url('/fonts/roboto/Roboto-Bold.ttf');
+  font-size: 10px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 156%;
+  color: $color-functional-neutral80;
+}
+
+
+// InfinitasRegular
+@font-face {
+  font-family: mwebleyHeroRegular;
+  src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 125%;
+  color: $color-functional-neutral80;
+
+}
+
+@font-face {
+  font-family: mwebleyHeadlineRegularOne;
+  src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 117%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineRegularTwo;
+  src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 124%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineRegularThree;
+  src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 132%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineRegularFour;
+  src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 124%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineRegularFive;
+  src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineRegularSix;
+  src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyBodyTextRegular;
+  src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyNoteRegular;
+  src: url('/fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 156%;
+  color: $color-functional-neutral80;
+}
+
+
+// InfinitasMedium
+@font-face {
+  font-family: mwebleyHeroMedium;
+  src: url('/fonts/roboto/Roboto-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 125%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineMediumOne;
+  src: url('/fonts/roboto/Roboto-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 117%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineMediumTwo;
+  src: url('/fonts/roboto/Roboto-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 124%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineMediumThree;
+  src: url('/fonts/roboto/Roboto-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 132%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineMediumFour;
+  src: url('/fonts/roboto/Roboto-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineMediumFive;
+  src: url('/fonts/roboto/Roboto-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 170%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyHeadlineMediumSix;
+  src: url('/fonts/roboto/Roboto-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 130%;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyBodyTextMedium;
+  src: url('/fonts/roboto/Roboto-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-functional-neutral80;
+}
+
+@font-face {
+  font-family: mwebleyNoteMedium;
+  src: url('/fonts/roboto/Roboto-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 156%;
+  color: $color-functional-neutral80;
+}

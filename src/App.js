@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import EnvironmentContext from './context/EnvironmentContext';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { envConfigService } from './services/EnvConfigService';
+import Home from './pages/home/Home';
+import ProductDetail from './pages/ProductDetail/ProductDetail';
+import './App.scss';
 
 function App() {
+    const [env, setEnv] = useState('');
+    const getEnv = async () => {
+        const envResponse = await envConfigService();
+        setEnv(envResponse);
+    };
+
+    useEffect(() => {
+        getEnv();
+    }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="app-container">
+          <Router>
+              <Switch>
+                  <EnvironmentContext.Provider value={env}>
+                      <Route exact path="/product/:id" component={ProductDetail} />
+                      <Route exact path="/" component={Home} />
+                  </EnvironmentContext.Provider>
+              </Switch>
+          </Router>
+      </div>
   );
 }
 
