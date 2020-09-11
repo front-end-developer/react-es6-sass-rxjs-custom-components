@@ -1,21 +1,9 @@
-/*
-* Do not delete this file, colours are also used in @font-face
-**/
-
-
 // branded colours
 $brand-primary-orange: #FFA500;
 $brand-primary-white: #FFFFFF;
 $brand-primary-black: #2A3C4D;
 $brand-secondary-blue: var(--brand-secondary-blue, #0083C9);
 $brand-background-lightgrey: #FAFCFF;
-
-// Primary colours
-$color-primary-orange100: var(--color-primary-orange100, #ECAC03);
-$color-primary-orange80: var(--color-primary-orange80, #FFB733);
-$color-primary-orange60: var(--color-primary-orange60, #FFC966);
-$color-primary-orange40: var(--color-primary-orange40, #FBE199);
-$color-primary-orange20: var(--color-primary-orange20, #FEF3D6);
 
 // Secondary Colours
 $color-secondary-blue100: var(--color-secondary-blue, #006CAE);
@@ -25,30 +13,8 @@ $color-secondary-blue40: var(--color-secondary-blue40, #99CDE9);
 $color-secondary-blue20: var(--color-secondary-blue20, #E5F3FA);
 $color-secondary-blue10: var(--color-secondary-blue10, #E5F2FA);
 
-// Support
-// Error, Success, Warning, Info Colours
-$brand-color-success: var(--brand-color-success, #58CE93);
-$brand-color-warning: var(--brand-color-warning, #FF9F5D);
-$brand-color-error: var(--brand-color-error, #F96363);
-$brand-color-success-light: var(--brand-color-success, #DFF8EA);
-$brand-color-warning-light: var(--brand-color-warning, #FCDFCB);
-$brand-color-error-light: var(--brand-color-error, #FEE0E0);
-// $brand-color-accent: var(--brand-color-accent, TBC);
-// $brand-color-info: var(--brand-color-info, TBC);
 
-
-
-// Functional Colours
-// The "Functional Colours", group covers the specific design need of applying different
-// colours that "Brand" in our interface components: link, social networks, etc. "Functional Colors" are divided into several groupos:
-
-// link Colours : TBD
-// $color-functional-linkdefault: var(--color-functional-linkdefault, TBD);
-// $color-functional-linkhover: var(--color-functional-linkhover, TBD);
-// $color-functional-linkactive: var(--color-functional-linkactive, TBD);
-// $color-functional-linkvisited: var(--color-functional-linkvisited, TBD);
-
-// Neutrals : TBD
+// Neutrals
 // a greyscale in intervals of 10% opacity from our base "Dark Gray" color.
 $color-functional-neutral80:  var(--color-functional-neutral80, #556371);
 $color-functional-neutral60:  var(--color-functional-neutral60, #7289A6);

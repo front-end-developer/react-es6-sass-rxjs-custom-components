@@ -8,14 +8,14 @@ import Header from '../../components/header/Header';
 import Carousel from '../../components/common/carousel/Carousel';
 import CarouselBanners from '../../components/common/carousel-banners/CarouselBanners';
 import * as dataService from '../../services/DataService';
-// import './home.styles.scss';
+import './product-list.styles.scss';
 
-const Home = () => {
+const ProductList = () => {
     const [actionItems, setActionItems] = useState([]);
     const [adventureItems, setAdventureItems] = useState([]);
     const [comedyItems, setComedyItems] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    const errorDefaultMessage = 'There was an unexpected error during the process'
+    const errorDefaultMessage = 'There was an unexpected error during the process';
     let observableActionItems$;
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const Home = () => {
         return () => {
             observableActionItems$.unsubscribe();
         }
-    }, []); // ,[actionItems, adventureItems, comedyItems]
+    }, []);
 
     function getAllActionItems() {
         observableActionItems$ = dataService.getAllActionItems()
@@ -113,11 +113,13 @@ const Home = () => {
     return (
         <>
             <Header></Header>
+            <CarouselBanners items={items} clickHandler={showDetail}></CarouselBanners>
+            <CarouselBanners items={items} clickHandler={showDetail}></CarouselBanners>
             {items ? <Carousel items={items} clickHandler={showDetail}></Carousel> : null}
-            <CarouselBanners items={items} clickHandler={showDetail}></CarouselBanners>
-            <CarouselBanners items={items} clickHandler={showDetail}></CarouselBanners>
+            {items ? <Carousel items={items} clickHandler={showDetail}></Carousel> : null}
+            {items ? <Carousel items={items} clickHandler={showDetail}></Carousel> : null}
         </>
     );
 }
 
-export default Home;
+export default ProductList;
