@@ -28,4 +28,4 @@ yarn-error.log*
 .history/
 
 # KEYS & CREDENTIALS
-/src/services/config/credentials-api-key.js
+src/services/config/credentials-api-key.js
