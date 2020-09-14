@@ -54,6 +54,9 @@ Navigate to
 Uses the https://developers.themoviedb.org/ API so you will have to get your own key.
 
 
+### Theme Example: colour updates according to genre
+![Alt text](screenshots/theme-colour-examples.png "UI Theme colours example")
+
 ### Desktop  view
 ![Alt text](screenshots/responsive-carousel-desktop-view-standard.jpg "desktop wide view")
 
