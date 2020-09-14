@@ -2,6 +2,8 @@ import {of} from 'rxjs';
 import {ajax as http} from 'rxjs/ajax';
 import {map, catchError} from 'rxjs/operators';
 import {Config} from './config/config-api';
+import { useHistory } from 'react-router-dom';
+import WishListStore from "./store/wish-list.store";
 
 const errorHandler = (error) => {
  if (error.response?.message) {
@@ -21,9 +23,8 @@ const transformData = (item) => {
     return data;
 }
 
-const getAllActionItems = () => {
-    console.log(`${Config.URL}${Config.API.VERSION}/list/23?${Config.API.KEY}&${Config.LANGUAGE}`);
-    return http.getJSON(`${Config.URL}${Config.API.VERSION}/list/23?${Config.API.KEY}&${Config.LANGUAGE}`)
+const getGenreItemsA = () => {
+    return http.getJSON(`${Config.URL}${Config.API.VERSION}/list/1?${Config.API.KEY}&${Config.LANGUAGE}`)
         .pipe(
             map(res => {
                 const productList = [];
@@ -36,24 +37,56 @@ const getAllActionItems = () => {
         );
 }
 
-const getAllAdventureItems = () => {
-    return http.getJSON(`${Config.URL}${Config.API.VERSION}/list/12?${Config.API.KEY}&${Config.LANGUAGE}`)
+const getGenreItemsB = () => {
+    return http.getJSON(`${Config.URL}${Config.API.VERSION}/list/2?${Config.API.KEY}&${Config.LANGUAGE}`)
         .pipe(
-            map(res => res),
+            map(res => {
+                const productList = [];
+                res.items.forEach((item) => {
+                    productList.push(transformData(item));
+                })
+                return productList;
+            }),
             catchError(error => errorHandler(error))
         );
 }
 
-const getAllComedyItems = () => {
+const getGenreItemsC = () => {
     return http.getJSON(`${Config.URL}${Config.API.VERSION}/list/35?${Config.API.KEY}&${Config.LANGUAGE}`)
         .pipe(
-            map(res => res),
+            map(res => {
+                const productList = [];
+                res.items.forEach((item) => {
+                    productList.push(transformData(item));
+                })
+                return productList;
+            }),
             catchError(error => errorHandler(error))
         );
+}
+
+const getMovieDetails = (movieId) => {
+    return http.getJSON(`${Config.URL}${Config.API.VERSION}/movie/${movieId}?${Config.API.KEY}&${Config.LANGUAGE}`)
+        .pipe(
+            map(res => {
+                return res;
+            }),
+            catchError(error => errorHandler(error))
+        );
+}
+
+/**
+ * @description     could use db for this, but instead used /store/wish-list.store.js
+ * @param           movieDetails
+ */
+const toggleAddToWishList = (movieDetails) => {
+    WishListStore.toggle(movieDetails.id, movieDetails);
 }
 
 export {
-    getAllActionItems,
-    getAllAdventureItems,
-    getAllComedyItems
+    getGenreItemsA,
+    getGenreItemsB,
+    getGenreItemsC,
+    getMovieDetails,
+    toggleAddToWishList
 };

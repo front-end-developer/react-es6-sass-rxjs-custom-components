@@ -1,7 +1,11 @@
 @import '../../resources/sass/variables';
-.header {
+.mw-header {
   margin-bottom: 15px;
+  min-width: $break-point-min-width;
   padding: 15px;
   color: $brand-primary-white;
   background: $brand-secondary-blue;
+  .link {
+    cursor: pointer;
+  }
 }

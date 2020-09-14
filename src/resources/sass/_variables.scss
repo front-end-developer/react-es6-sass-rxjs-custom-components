@@ -32,8 +32,6 @@ $color-functional-blue40:  var(--color-functional-blue40, #96AAC2);
 $color-functional-blue20:  var(--color-functional-blue20, #C2D3E4);
 $color-functional-blue10:  var(--color-functional-blue10, #EFF3F6);
 
-// purples
-// TBD, old design colours, to be defined if still in use
 
 // components
 $color-button-orange:  var(--color-button-orange, #F6B300);
@@ -42,3 +40,4 @@ $color-button-blue:  var(--color-button-blue, #0083C9);
 $color-button-blue-active:  var(--color-button-blue-active, #006CAE);
 
 
+$break-point-min-width: 385px;

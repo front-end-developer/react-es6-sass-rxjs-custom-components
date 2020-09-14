@@ -1,0 +1,20 @@
+@import '../../../resources/sass/variables';
+.add-to-wishlist {
+  display: inline-block;
+  border: solid $brand-secondary-blue 3px;
+  border-radius: 50%;
+  padding: 3px;
+  outline: none;
+  height: 30px;
+  width: 30px;
+  background: url(/images/wish-list.png) 4px 6px no-repeat;
+  background-size: 64%;
+  line-height: 1.2rem;
+  margin: -8px 5px  0 0;
+  cursor: pointer;
+
+  &.selected {
+    background: url('/images/wish-list-selected.png') 4px 6px no-repeat;
+    background-size: 64%;
+  }
+}

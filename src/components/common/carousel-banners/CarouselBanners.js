@@ -7,20 +7,6 @@ import './carousel-banners.styles.scss';
 const CarouselBanners = ({clickHandler, items}) => {
     const [currentItem, setCurrentItem] = useState({item: 0});
     const componentContext = useRef(null);
-
-    useEffect(() => {
-        setDefaults();
-    },[]);
-
-    // todoa a Page Size Event
-
-
-
-    function setDefaults() {
-        if (items.length) {
-        }
-    }
-
     const moveItemLeft = (event) => {
         if (currentItem.item <= 0) {
             return;
@@ -49,13 +35,18 @@ const CarouselBanners = ({clickHandler, items}) => {
         });
     };
 
+    const clickProduct = (event) => {
+        const productId = event.currentTarget.id.substr(5);
+        clickHandler(productId);
+    }
+
     let createElements = items.map((element) => {
        return (
            <span
                 className="carousel-item"
                 id={`item-${element.id}`}
                 key={element.id}
-                onClick={clickHandler}>
+                onClick={clickProduct}>
                 <img src={element.image} alt="" />
                 <span className="description">{element.description}</span>
             </span>

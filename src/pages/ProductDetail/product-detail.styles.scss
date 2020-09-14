@@ -1,36 +1,124 @@
+@import '../../resources/sass/variables';
 .product-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
-
-  background: yellow;
+  min-width: $break-point-min-width;
 
   .panel {
     width: 200px;
-    border: 3px solid black;
-
-    background: lightgrey;
+    min-width: $break-point-min-width;
+    border: 3px solid $color-functional-neutral20;
+    border-radius: 0.5rem;
+    background: $brand-primary-white;
   }
 
   .product-image {
-    min-height: 100px;
+    min-width: $break-point-min-width;
+    background: none;
+    display: flex;
+    flex-direction: column;
     margin: 0 35px 35px 0;
     flex-shrink: 0;
     flex-grow: 2;
+    align-items: center;
+    border: none;
+
+    img {
+      max-height: 529px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
   }
 
+
+
   .product-description {
-    min-height: 500px;
+    min-width: $break-point-min-width;
     margin: 0 0 35px 0;
+    padding: 15px;
     flex-grow: 1;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $brand-secondary-blue;
+
+      span {
+        font-size: 0.5rem;
+      }
+    }
+
+    &.tv-movie {
+      h1 {
+        color: $color-secondary-blue100;
+      }
+
+      h2 {
+        .btn-votes {
+          background: $color-secondary-blue100;
+        }
+      }
+    }
+
+    &.adventure {
+      h1 {
+        color: $brand-primary-orange;
+      }
+
+      h2 {
+        .btn-votes {
+          background: $brand-primary-orange;
+        }
+      }
+    }
+
+    &.drama {
+      h1 {
+        color: $brand-secondary-blue;
+      }
+
+      h2 {
+        .btn-votes {
+          background: $brand-secondary-blue;
+        }
+      }
+    }
+
+
+    h2 {
+      margin-top: 15px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .summary {
+      margin-top: 25px;
+      line-height: 1.7rem;
+      text-align: justify;
+      overflow-y: auto;
+      max-height: 377px;
+      margin-right: -15px;
+      padding-right: 5px;
+    }
+  }
+
+  .btn-votes {
+    display: inline-block;
+    color: $brand-primary-white;
+    background: $color-button-orange;
+    padding: 5px;
+    font-size: 0.7rem;
+    border: solid $color-functional-neutral40 1px;
+    border-radius: 1rem;
   }
 
   @media (max-width: 500px) {
     .product-image {
       margin: 0 0 35px 0;
       min-height: auto;
-      background: red;
     }
 
     .product-description {
@@ -41,9 +129,38 @@
 
 .product-info {
   display: flex;
+  flex-wrap: wrap;
   min-height: 100px;
-  border: 3px solid black;
-  background: lightgrey;
+  min-width: $break-point-min-width;
+  padding: 10px;
+  border: 3px solid $color-functional-neutral20;
+  border-radius: 0.5rem;
+
+  .product-data {
+    flex: 3;
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .btn-view-site {
+      display: inline-block;
+      padding: 5px;
+      margin: 0 15px 15px 0;
+      color: $brand-primary-white;
+      background: $color-functional-neutral40;
+      border: 1px solid $color-functional-neutral40;
+
+      &:hover {
+        background: $brand-secondary-blue;
+      }
+    }
+  }
+
+  img {
+    display: block;
+    margin-right: 10px;
+  }
 }
 
 
