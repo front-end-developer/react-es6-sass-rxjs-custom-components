@@ -10,6 +10,7 @@ import {take} from "rxjs/operators/index";
 import Favourites from "../../components/common/favourites/Favourites";
 import {Config} from "../../services/config/config-api";
 import WishListStore from "../../services/store/wish-list.store";
+import CurrencyFormat from 'react-currency-format';
 
 const ProductDetail = ({ match }) => {
     const [isLoading, setIsLoading] = useState(false);
@@ -115,8 +116,8 @@ const ProductDetail = ({ match }) => {
                            <p>Original Language: {movieDetails['original_language']}</p>
                            <p>Genres: { genres }</p>
                            <p>Production Companies: { movieDetails['production_companies'].map(productionCompanies => productionCompanies.name).join(' | ') }</p>
-                           <p>Revenue: {movieDetails?.revenue}</p>
-                           <p>Budget: {movieDetails?.budget}</p>
+                           <p>Revenue: <CurrencyFormat value={movieDetails?.revenue} displayType={'text'} thousandSeparator={true} prefix={'$'} /></p>
+                           <p>Budget: <CurrencyFormat value={movieDetails?.budget} displayType={'text'} thousandSeparator={true} prefix={'$'} /></p>
                        </div>
                    </div>
                </div>)}
